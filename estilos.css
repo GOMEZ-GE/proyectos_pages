@@ -1,0 +1,648 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    background-color: #070580;
+
+}
+
+/* HEADER */
+
+header {
+    margin-top: 1rem;
+    height: 10%;
+    display: flex;
+
+}
+
+.container_header_img {
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+
+}
+
+header img {
+    filter: drop-shadow(1px 1px 20px yellow);
+    width: 130px;
+
+
+}
+
+.container_header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap:30px; */
+}
+
+nav {
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    border-radius: 1px 50%;
+    margin: auto;
+    display: inline-flex;
+}
+
+nav li {
+    padding: 0.5rem;
+    list-style: none;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+
+
+
+}
+
+.btn_nav {
+    border-bottom: solid 2px yellow;
+
+}
+
+nav a:hover {
+    border-bottom: solid 2px yellow;
+    cursor: pointer;
+
+}
+
+/* INICIO */
+
+.container_baner_inicio {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    background-image: url('./media/baner_4.jfif');
+    width: 100vw;
+    height: 60vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.star_inicio {
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.star_inicio i {
+    color: yellow;
+    font-size: 2.5rem;
+    filter: drop-shadow(1px 1px 20px yellow);
+    padding: 2rem;
+
+}
+
+.titulo_inicio {
+    color: yellow;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 3.5rem;
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.lorem_inicio {
+    color: white;
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding: 1rem;
+    width: 75%;
+
+}
+
+.container_btn_inicio {
+    padding: 1rem;
+}
+
+.btn_inicio {
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+footer {
+    border-top: double 5px yellow;
+    color: white;
+    height: 20vh;
+
+}
+
+.container_footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 20px;
+}
+
+.container_footer_contacto {
+    width: 45vw;
+    padding: 0.5rem;
+
+}
+
+.container_footer_asociados {
+    width: 39vw;
+    padding: 1rem;
+    border-left: 1px solid yellow;
+
+}
+
+.container_footer_asociados ul {
+    padding: 0;
+
+}
+
+.container_footer_asociados li {
+    list-style: none;
+
+}
+
+.container_footer_asociados a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.container_footer_redes {
+    width: 100vh;
+    padding: 0.5rem;
+    text-align: center;
+    margin: auto;
+}
+
+.container_footer_redes ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+
+}
+
+.container_footer_redes li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem;
+    text-align: center;
+    margin: auto;
+
+}
+
+.copyright {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+/* NOTICIAS */
+
+.container_noticias {
+    height: 62vh;
+    background-color: whitesmoke;
+    margin-top: 2rem;
+}
+
+.carrusel_container img {
+    height: 250px;
+
+}
+
+.tarjeta_noticias {
+    background-color: #070580;
+    height: 80px;
+    color: white;
+    padding: 1rem;
+}
+
+.container_historia {
+    background-color: whitesmoke;
+    margin-top: 1rem;
+}
+
+.container_item_historia {
+    padding: 1rem;
+}
+
+.container_item_historia p {
+    text-align: justify;
+}
+
+.con-estrellas-arriba::after {
+    content: "";
+    display: block;
+    overflow: hidden;
+    height: 29px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: url(./media/estrellas.png);
+    background-position: 0 50%;
+    background-repeat: repeat-x;
+    background-size: inherit;
+    margin-bottom: 1rem;
+
+}
+
+.img-fluid-historia {
+    width: 95vh;
+    height: 20vh;
+}
+
+/* JUGADORES */
+
+.container_jugadores {
+    background-color: whitesmoke;
+    padding: 1rem;
+}
+
+.container_plantel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.container_img_plantel {
+    justify-items: center;
+    margin: auto;
+    padding: 0.5rem;
+    border: 0.2rem solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.8rem;
+
+}
+
+.container_img_plantel img {
+    width: 150px;
+}
+
+/* CONTACTO */
+
+.container_contacto {
+    background-color: whitesmoke;
+    padding: 1rem;
+}
+
+.iniciar_consultas {
+    max-width: 300px;
+    max-height: 300px;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.container_consultas {
+    max-width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        width: 80vw;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    .container_header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 120px;
+    }
+
+    /* INICIO */
+
+    .container_baner_inicio {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .lorem_inicio {
+        font-size: 0.8rem;
+
+    }
+
+    /* FOOTER */
+
+    .container_footer {
+        align-items: center;
+        margin: auto;
+        width: 80vw;
+    }
+
+    .container_footer_contacto {
+        width: 65%;
+        padding: 0.5rem;
+
+    }
+
+    .container_footer_asociados {
+        width: 30%;
+        padding: 0.5rem;
+        border-left: 1px solid yellow;
+
+    }
+
+    .container_footer_asociados ul {
+        padding: 0.5rem;
+
+    }
+
+    .container_footer_redes {
+        width: 50vh;
+        padding: 0.5rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .container_footer_redes ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+
+    }
+
+    /* NOTICIAS */
+
+    main {
+        background-color: whitesmoke;
+    }
+
+    .container_noticias {
+        width: 80vh;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    .carrusel_container img {
+        height: 300px;
+
+    }
+
+    /* HISTORIA */
+
+    .container_historia {
+        width: 80vw;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    .container_item_historia {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .container_item_historia_p {
+        width: 52%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .container_row_reverse_historia {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+    .img-fluid-historia {
+        width: 30vh;
+        height: 20vh;
+    }
+
+    /* JUGADORES */
+
+    .container_jugadores {
+        width: 80vw;
+        align-items: center;
+        margin: auto;
+    }
+
+    .container_plantel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .container_img_plantel {
+        justify-items: center;
+        margin: auto;
+        padding: 0.5rem;
+        border: 0.2rem solid rgba(0, 0, 0, 0.3);
+        box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+        margin-bottom: 0.8rem;
+
+    }
+
+    .container_img_plantel img {
+        width: 150px;
+    }
+
+    /* CONTACTO */
+
+    .container_contacto {
+        width: 80vw;
+        align-items: center;
+        margin: auto;
+    }
+
+    .container_info_consultas {
+        width: 70%;
+    }
+
+    .titulo_contacto {
+        margin-left: 85px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+    /* HEADER */
+
+    header {
+        width: 70vw;
+        align-items: center;
+        margin: auto;
+        margin-top: 1rem;
+
+    }
+
+    .container_header {
+        gap: 220px;
+    }
+
+    /* INICIO */
+
+    .lorem_inicio {
+        font-size: 1rem;
+
+    }
+
+    .container_inicio_presentacion {
+        margin-left: 200px;
+    }
+
+    /* FOOTER */
+
+    .container_footer {
+        width: 70vw;
+        padding: 0.5rem;
+        justify-content: space-around;
+    }
+
+    .container_footer_contacto {
+        width: 30%;
+        height: 15vh;
+        padding: 0.5rem;
+
+    }
+
+    .container_footer_asociados {
+        width: 25%;
+        height: 15vh;
+
+    }
+
+    .container_footer_redes {
+        width: 25%;
+        height: 15vh;
+        border-left: 1px solid yellow;
+
+    }
+
+    .redes_titulo {
+        width: 100%;
+        height: 15px;
+        text-align: start;
+        padding: 0;
+    }
+
+    .container_footer_redes ul {
+        margin-top: 0.8rem;
+        width: 100%;
+
+    }
+
+    .copyright {
+        margin-top: 3rem;
+    }
+
+    /* HISTORIA */
+
+    .container_historia {
+        width: 70vw;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    .container_historia_gral {
+        width: 70vw;
+    }
+
+    .container_row_reverse_historia {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .container_item_historia_p {
+        width: 53%;
+        text-align: center;
+        margin: auto;
+    }
+
+
+    /* JUGADORES */
+
+    .container_jugadores {
+        width: 80vw;
+        padding: 1rem;
+    }
+
+    .container_img_plantel img {
+        width: 250px;
+        transform: scale(1);
+    }
+
+    .container_img_plantel img:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    /* CONTACTO */
+
+    .container_contacto {
+        width: 50vw;
+        align-items: center;
+        margin: auto;
+    }
+
+    .container_info_consultas {
+        width: 70%;
+    }
+
+    .titulo_contacto {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .container_section_contacto{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .container_info_consultas{
+        width: 45%;
+        padding: 0;
+        margin: 0;
+        text-align: justify;
+    }
+
+    .container_consultas{
+        width: 50%;
+        margin-top: 0;
+    }
+
+}
